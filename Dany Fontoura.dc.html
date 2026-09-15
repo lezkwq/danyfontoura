@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Dany Fontoura | Especialista em Definição Feminina em Porto Belo</title>
+<meta name="description" content="Personal trainer em Porto Belo especializada em definição feminina. Método FIT12, treino personalizado e consultoria online, com acompanhamento semana a semana." />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Oswald:wght@300;400;500&display=swap" />
+<style>
+  html, body { margin: 0; padding: 0; max-width: 100%; overflow-x: hidden; overscroll-behavior-x: none; }
+  body { background: #FAF4E9; color: #070707; font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; }
+  a { color: #33266B; text-decoration: none; }
+  a:hover { color: #9476C4; }
+  html { scroll-behavior: smooth; }
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["LocalBusiness","HealthAndBeautyBusiness"],"name":"Dany Fontoura - Personal Trainer Porto Belo","description":"Personal trainer em Porto Belo especializada em definição feminina, com treinamento personalizado presencial, consultoria online e o Método FIT12.","image":"img/dany.jpg","telephone":"+5547992320279","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Av. Gov. Celso Ramos, 1374, Perequê","addressLocality":"Porto Belo","addressRegion":"SC","postalCode":"88210-000","addressCountry":"BR"},"areaServed":"Porto Belo, SC","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"20:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"19","bestRating":"5"},"employee":{"@type":"Person","name":"Dany Fontoura","jobTitle":"Personal Trainer","hasCredential":"CREF 036072 G/SC"}}
+</script>
+</helmet>
+
+<div style="background:#FAF4E9;max-width:100%;overflow-x:hidden">
+
+  <header style="position:sticky;top:0;z-index:50;background:#FAF4E9;border-bottom:1px solid rgba(7,7,7,.07)">
+    <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+      <div style="max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px);height:90px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px">
+        <nav style="display:flex;gap:clamp(13px,1.7vw,24px);align-items:center;min-width:0;flex-wrap:nowrap;white-space:nowrap">
+          <a href="#sobre" style="font-size:12px;font-weight:500;color:#34302C;letter-spacing:.02em">Sobre</a>
+          <a href="#fit12" style="font-size:12px;font-weight:500;color:#34302C;letter-spacing:.02em">Método FIT12</a>
+          <a href="#resultados" style="font-size:12px;font-weight:500;color:#34302C;letter-spacing:.02em">Resultados</a>
+          <a href="#avaliacoes" style="font-size:12px;font-weight:500;color:#34302C;letter-spacing:.02em">Avaliações</a>
+          <a href="#contato" style="font-size:12px;font-weight:500;color:#34302C;letter-spacing:.02em">Contato</a>
+        </nav>
+        <div style="text-align:center">
+          <div style="font-family:'Oswald',sans-serif;font-size:24px;font-weight:500;letter-spacing:.3em;text-transform:uppercase;color:#070707;line-height:1">Dany Fontoura</div>
+          <div style="font-size:10px;letter-spacing:.32em;font-weight:400;color:#34302C;text-transform:uppercase;margin-top:7px;margin-left:.32em">Definição Feminina</div>
+        </div>
+        <div style="display:flex;gap:7px;align-items:center;justify-content:flex-end">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de Dany Fontoura" style="width:28px;height:28px;border-radius:999px;background:#9476C4;display:flex;align-items:center;justify-content:center" style-hover="background:#8667B8">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.9.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"></path></svg>
+          </a>
+          <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" aria-label="WhatsApp de Dany Fontoura" style="width:28px;height:28px;border-radius:999px;background:#9476C4;display:flex;align-items:center;justify-content:center" style-hover="background:#8667B8">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+          </a>
+          <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="margin-left:12px;height:44px;padding-inline:clamp(20px,2.4vw,30px);display:inline-flex;align-items:center;flex:0 0 auto;white-space:nowrap;background:#9476C4;color:#fff;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:180ms ease" style-hover="background:#8667B8;transform:translateY(-2px);color:#fff">Fale com a Dany</a>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isMobile }}">
+      <div style="padding:0 20px;height:72px;display:flex;align-items:center;justify-content:space-between">
+        <div>
+          <div style="font-family:'Oswald',sans-serif;font-size:17px;font-weight:500;letter-spacing:.28em;text-transform:uppercase;line-height:1">Dany Fontoura</div>
+          <div style="font-size:8px;letter-spacing:.32em;color:#34302C;text-transform:uppercase;margin-top:5px;margin-left:.32em">Definição Feminina</div>
+        </div>
+        <button type="button" onClick="{{ toggleMenu }}" aria-label="Abrir menu" style="width:46px;height:46px;border:1px solid rgba(7,7,7,.18);background:transparent;border-radius:999px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:0;cursor:pointer">
+          <span style="display:block;width:16px;height:2px;background:#070707"></span>
+          <span style="display:block;width:16px;height:2px;background:#070707"></span>
+        </button>
+      </div>
+    </sc-if>
+  </header>
+
+  <sc-if value="{{ menuOpen }}">
+    <div style="position:fixed;inset:0;z-index:90;background:#33266B;color:#fff;padding:24px 24px 40px;display:flex;flex-direction:column">
+      <div style="display:flex;align-items:center;justify-content:space-between">
+        <div style="font-family:'Oswald',sans-serif;font-size:16px;letter-spacing:.28em;text-transform:uppercase">Dany Fontoura</div>
+        <button type="button" onClick="{{ closeMenu }}" aria-label="Fechar menu" style="width:46px;height:46px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;border-radius:999px;font-size:20px;line-height:1;cursor:pointer">×</button>
+      </div>
+      <nav style="margin-top:44px;display:flex;flex-direction:column;gap:20px">
+        <a href="#sobre" onClick="{{ closeMenu }}" style="color:#fff;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1" style-hover="color:#F4C842">Sobre</a>
+        <a href="#fit12" onClick="{{ closeMenu }}" style="color:#fff;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1" style-hover="color:#F4C842">Método FIT12</a>
+        <a href="#resultados" onClick="{{ closeMenu }}" style="color:#fff;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1" style-hover="color:#F4C842">Resultados</a>
+        <a href="#avaliacoes" onClick="{{ closeMenu }}" style="color:#fff;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1" style-hover="color:#F4C842">Avaliações</a>
+        <a href="#como-funciona" onClick="{{ closeMenu }}" style="color:#fff;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1" style-hover="color:#F4C842">Como funciona</a>
+        <a href="#contato" onClick="{{ closeMenu }}" style="color:#fff;font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:1" style-hover="color:#F4C842">Onde atendo</a>
+      </nav>
+      <div style="margin-top:auto;display:flex;gap:10px;align-items:center;padding-top:40px">
+        <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de Dany Fontoura" style="width:44px;height:44px;border-radius:999px;background:rgba(255,255,255,.15);border:1px solid #fff;display:flex;align-items:center;justify-content:center">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.9.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"></path></svg>
+        </a>
+        <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="flex:1;height:52px;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:rgba(255,255,255,.15);border:1px solid #fff;border-radius:999px;color:#fff;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+          Quero começar
+        </a>
+      </div>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+    <section style="max-width:1180px;margin:0 auto;padding:70px clamp(20px,4vw,48px) 80px;position:relative">
+      <div style="display:grid;grid-template-columns:1.12fr .95fr .72fr;gap:20px;align-items:end;min-height:600px">
+        <div style="align-self:center;padding-bottom:40px">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#9476C4">Especialista em definição feminina</div>
+          <h1 style="margin:18px 0 0;font-size:clamp(48px,4.6vw,72px);font-weight:800;line-height:.92;letter-spacing:-.045em;color:#070707;text-wrap:balance">Treino de<br />mulher,<br />feito para<br />o seu corpo</h1>
+          <div style="width:25px;height:2px;background:#F4C842;margin:28px 0 0"></div>
+          <p style="margin:24px 0 0;max-width:330px;font-size:14px;line-height:1.55;color:#34302C">Treinamento personalizado em Porto Belo e consultoria online. Eu monto o treino conforme o seu objetivo e acompanho a sua evolução de perto, semana a semana.</p>
+          <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="margin-top:32px;height:44px;padding-inline:36px;display:inline-flex;align-items:center;gap:10px;background:#9476C4;color:#fff;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:180ms ease" style-hover="background:#8667B8;transform:translateY(-2px);color:#fff">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+            Quero começar agora
+          </a>
+        </div>
+
+        <div style="position:relative;height:600px;display:flex;align-items:flex-end;justify-content:center">
+          <div style="position:absolute;left:-6%;bottom:44px;width:104%;height:78%;background:#9476C4;border-radius:52% 48% 38% 62% / 56% 44% 56% 44%;z-index:0"></div>
+          <div style="position:absolute;right:-14%;top:34px;width:92px;height:92px;background:#F4C842;border-radius:58% 42% 46% 54% / 44% 56% 44% 56%;z-index:0"></div>
+          <img src="img/dany.jpg" alt="Dany Fontoura, personal trainer especialista em definição feminina, na academia onde atende em Porto Belo" style="position:relative;z-index:1;width:100%;max-width:360px;height:560px;object-fit:cover;object-position:50% 14%;border-radius:50% 50% 44% 56% / 60% 60% 40% 40%" />
+        </div>
+
+        <div style="position:relative;z-index:3;margin-left:-70px;margin-bottom:96px">
+          <sc-if value="{{ showHeroCard }}" hint-placeholder-val="{{ true }}">
+          <div style="width:260px;min-height:260px;background:#F4C842;padding:30px 28px;box-shadow:0 15px 35px rgba(25,15,5,.12);display:flex;flex-direction:column">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#34302C">Método</div>
+            <div style="margin-top:12px;font-size:44px;font-weight:800;line-height:.9;letter-spacing:-.045em;color:#070707">FIT12</div>
+            <div style="width:25px;height:2px;background:#070707;margin-top:20px"></div>
+            <p style="margin:auto 0 0;padding-top:22px;font-size:13px;line-height:1.5;color:#070707">Acompanhamento de treinamento feminino estruturado em 12 semanas.</p>
+          </div>
+          </sc-if>
+        </div>
+      </div>
+    </section>
+  </sc-if>
+
+  <sc-if value="{{ isMobile }}">
+    <section style="padding:34px 20px 40px">
+      <div style="font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:#9476C4">Especialista em definição feminina</div>
+      <h1 style="margin:14px 0 0;font-size:clamp(40px,12.5vw,54px);font-weight:800;line-height:.92;letter-spacing:-.045em;color:#070707">Treino de mulher, feito para o seu corpo</h1>
+      <p style="margin:18px 0 0;font-size:14px;line-height:1.55;color:#34302C">Treinamento personalizado em Porto Belo e consultoria online.</p>
+      <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="margin-top:24px;height:50px;padding-inline:30px;display:inline-flex;align-items:center;gap:10px;background:#9476C4;color:#fff;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+        Quero começar agora
+      </a>
+      <div style="position:relative;margin-top:36px;display:flex;justify-content:center">
+        <div style="position:absolute;left:4%;bottom:18px;width:92%;height:76%;background:#9476C4;border-radius:52% 48% 38% 62% / 56% 44% 56% 44%;z-index:0"></div>
+        <img src="img/dany.jpg" alt="Dany Fontoura, personal trainer especialista em definição feminina, na academia onde atende em Porto Belo" style="position:relative;z-index:1;width:88%;max-width:340px;aspect-ratio:2/3;object-fit:cover;object-position:50% 14%;border-radius:50% 50% 44% 56% / 60% 60% 40% 40%" />
+      </div>
+    </section>
+  </sc-if>
+
+  <section aria-label="Credibilidade" style="border-top:1px solid rgba(7,7,7,.07);border-bottom:1px solid rgba(7,7,7,.07);background:#FFF9EF">
+    <div style="max-width:1180px;margin:0 auto;padding:44px clamp(20px,4vw,48px);display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:36px 24px">
+      <div>
+        <div style="font-size:42px;font-weight:800;line-height:1;letter-spacing:-.04em">5,0</div>
+        <div style="width:25px;height:2px;background:#F4C842;margin-top:12px"></div>
+        <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.14em;color:#34302C;margin-top:12px">Nota no Google</div>
+      </div>
+      <div>
+        <div style="font-size:42px;font-weight:800;line-height:1;letter-spacing:-.04em">19</div>
+        <div style="width:25px;height:2px;background:#F4C842;margin-top:12px;margin-left:8px"></div>
+        <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.14em;color:#34302C;margin-top:12px">Avaliações de alunas</div>
+      </div>
+      <div>
+        <div style="font-size:26px;font-weight:800;line-height:1.1;letter-spacing:-.03em;padding-top:8px">Presencial<br />e online</div>
+        <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.14em;color:#34302C;margin-top:14px">Porto Belo e região</div>
+      </div>
+      <div>
+        <div style="font-size:26px;font-weight:800;line-height:1.1;letter-spacing:-.03em;padding-top:8px">CREF<br />036072 G/SC</div>
+        <div style="font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.14em;color:#34302C;margin-top:14px">Registro profissional</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="avaliacoes" style="max-width:1180px;margin:0 auto;padding:80px clamp(20px,4vw,48px)">
+    <h2 style="margin:0;max-width:620px;font-size:clamp(34px,4vw,54px);font-weight:800;line-height:.95;letter-spacing:-.035em">O que as alunas<br />falam da <span style="position:relative;display:inline-block;z-index:0" style-before="content:'';position:absolute;inset:64% -2px 11px;background:#9476C4;z-index:-1">Dany</span></h2>
+    <p style="margin:20px 0 0;max-width:420px;font-size:14px;line-height:1.55;color:#34302C">Avaliações publicadas no perfil do Google, sem edição.</p>
+    <div style="margin-top:44px;display:flex;flex-wrap:wrap;gap:24px">
+      <figure style="margin:0;flex:1 1 420px;background:#FFF9EF;padding:clamp(28px,3vw,40px) clamp(26px,2.8vw,36px);border:1px solid rgba(7,7,7,.06);display:flex;flex-direction:column">
+        <div style="font-size:30px;font-weight:800;line-height:1;color:#9476C4">“</div>
+        <blockquote style="margin:16px 0 0;font-size:clamp(16px,1.6vw,19px);line-height:1.5;color:#070707">Excelente profissional, estou amando a consultoria online, treino personalizado, super atenciosa. O trabalho da Dany esta sendo fundamental para o meu processo de emagrecimento, em poucas semanas já vi resultados. Não fico mais sem ela 🤩🤩 …</blockquote>
+        <figcaption style="margin-top:auto;padding-top:28px;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">Amanda Garcia</figcaption>
+      </figure>
+      <figure style="margin:0;flex:1 1 300px;background:#33266B;color:#fff;padding:clamp(28px,3vw,40px) clamp(26px,2.8vw,36px);display:flex;flex-direction:column">
+        <div style="font-size:30px;font-weight:800;line-height:1;color:#F4C842">“</div>
+        <blockquote style="margin:16px 0 0;font-size:clamp(16px,1.6vw,19px);line-height:1.5;color:#fff">Excelente profissional! Muito atenciosa, dedicada e sempre motivando a alcançar os objetivos. Estou muito satisfeita com os resultados 🤩 …</blockquote>
+        <figcaption style="margin-top:auto;padding-top:28px;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.75)">Cailane Machado</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="sobre" style="max-width:1180px;margin:0 auto;padding:40px clamp(20px,4vw,48px) 80px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:56px;align-items:center">
+      <div style="position:relative">
+        <div style="position:absolute;left:-8%;bottom:-8%;width:56%;height:50%;background:#F4C842;border-radius:46% 54% 40% 60% / 58% 42% 58% 42%;z-index:0"></div>
+        <div style="position:absolute;right:-4%;top:-7%;width:76px;height:76px;background:#9476C4;border-radius:58% 42% 46% 54% / 44% 56% 44% 56%;z-index:0"></div>
+        <div style="position:relative;z-index:1;background:#FFF9EF;border:1px solid rgba(7,7,7,.08);padding:clamp(26px,3.2vw,40px)">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#9476C4">Registro profissional</div>
+          <div style="font-size:clamp(44px,4.6vw,62px);font-weight:800;line-height:.9;letter-spacing:-.05em;margin-top:12px">CREF<br />036072</div>
+          <div style="font-size:14px;font-weight:700;letter-spacing:.1em;margin-top:10px;color:#34302C">G/SC</div>
+          <div style="width:25px;height:2px;background:#F4C842;margin-top:24px"></div>
+          <div style="margin-top:24px;border-top:1px solid rgba(7,7,7,.09);padding-top:16px">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#34302C">Especialidade</div>
+            <div style="margin-top:8px;font-size:15px;font-weight:700;line-height:1.35;letter-spacing:-.01em">Definição feminina e treinamento de mulheres</div>
+          </div>
+          <div style="margin-top:18px;border-top:1px solid rgba(7,7,7,.09);padding-top:16px">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#34302C">Atendimento</div>
+            <div style="margin-top:8px;font-size:15px;font-weight:700;line-height:1.35;letter-spacing:-.01em">Presencial em Porto Belo e consultoria online</div>
+          </div>
+          <div style="margin-top:18px;border-top:1px solid rgba(7,7,7,.09);padding-top:16px">
+            <div style="font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#34302C">Método</div>
+            <div style="margin-top:8px;font-size:15px;font-weight:700;line-height:1.35;letter-spacing:-.01em">FIT12, acompanhamento em 12 semanas</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#9476C4">Prazer</div>
+        <h2 style="margin:16px 0 0;font-size:clamp(34px,4vw,52px);font-weight:800;line-height:.95;letter-spacing:-.035em">Sou a <span style="position:relative;display:inline-block;z-index:0" style-before="content:'';position:absolute;inset:64% -2px 11px;background:#9476C4;z-index:-1">Dany</span>, e o treino é montado com você</h2>
+        <p style="margin:24px 0 0;font-size:14px;line-height:1.6;color:#34302C">Sou personal trainer registrada no CREF sob o número 036072 G/SC e trabalho com treinamento feminino. O meu foco é definição, e para chegar nisso eu não entrego treino de prateleira: cada série é escolhida a partir do seu objetivo, do seu nível hoje e do tempo que você tem na semana.</p>
+        <p style="margin:18px 0 0;font-size:14px;line-height:1.6;color:#34302C">Atendo presencialmente em Porto Belo e região e também por consultoria online, para quem treina na própria academia. Nos dois formatos você tem direção clara do que fazer e acompanhamento da sua evolução, que é justamente o que faz o treino continuar dando certo depois da primeira semana.</p>
+        <div style="margin-top:34px;display:flex;align-items:center;gap:16px">
+          <div style="width:44px;height:2px;background:#9476C4"></div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">Treinamento feminino, presencial e online</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fit12" style="background:#33266B;color:#fff;position:relative;overflow:hidden">
+    <div style="position:absolute;left:46%;top:52%;width:250px;height:250px;background:#F4C842;border-radius:48% 52% 38% 62% / 54% 46% 54% 46%;z-index:0"></div>
+    <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:64px clamp(20px,4vw,48px) 80px">
+      <div style="text-align:center;max-width:720px;margin:0 auto">
+        <div style="font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#F4C842">Método FIT12</div>
+        <h2 style="margin:18px 0 0;font-size:clamp(32px,3.6vw,42px);font-weight:700;line-height:1;color:#fff;letter-spacing:-.025em">12 semanas de treino com direção e acompanhamento</h2>
+        <p style="margin:20px auto 0;max-width:560px;font-size:14px;line-height:1.6;color:rgba(255,255,255,.82)">O FIT12 é o meu acompanhamento de treinamento feminino organizado em um ciclo de 12 semanas. Tempo suficiente para o treino evoluir de verdade, com ajuste ao longo do caminho em vez de uma ficha entregue e esquecida.</p>
+      </div>
+      <div style="margin-top:44px;display:grid;grid-template-columns:{{ programCols }};gap:30px">
+        <div style="background:#FFF9EF;color:#070707;padding:24px 20px 26px;min-height:220px;display:flex;flex-direction:column">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9476C4">01</div>
+          <h3 style="margin:14px 0 0;font-size:20px;font-weight:700;line-height:1.05;letter-spacing:-.02em">Treino personalizado</h3>
+          <div style="width:25px;height:2px;background:#F4C842;margin:18px 0 0"></div>
+          <p style="margin:auto 0 0;padding-top:22px;font-size:12px;line-height:1.5;color:#34302C">O plano é montado para o seu objetivo e para o seu nível atual, não para uma média de aluna.</p>
+        </div>
+        <div style="background:#FFF9EF;color:#070707;padding:24px 20px 26px;min-height:220px;display:flex;flex-direction:column">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9476C4">02</div>
+          <h3 style="margin:14px 0 0;font-size:20px;font-weight:700;line-height:1.05;letter-spacing:-.02em">Orientação na execução</h3>
+          <div style="width:25px;height:2px;background:#F4C842;margin:18px 0 0"></div>
+          <p style="margin:auto 0 0;padding-top:22px;font-size:12px;line-height:1.5;color:#34302C">Você sabe o que fazer, como fazer e por quê, seja treinando comigo no presencial ou pela consultoria online.</p>
+        </div>
+        <div style="background:#FFF9EF;color:#070707;padding:24px 20px 26px;min-height:220px;display:flex;flex-direction:column">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9476C4">03</div>
+          <h3 style="margin:14px 0 0;font-size:20px;font-weight:700;line-height:1.05;letter-spacing:-.02em">Acompanhamento da evolução</h3>
+          <div style="width:25px;height:2px;background:#F4C842;margin:18px 0 0"></div>
+          <p style="margin:auto 0 0;padding-top:22px;font-size:12px;line-height:1.5;color:#34302C">Eu acompanho o seu progresso dentro do ciclo e ajusto o treino conforme o seu corpo responde.</p>
+        </div>
+      </div>
+      <div style="margin-top:48px;text-align:center">
+        <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="height:44px;padding-inline:36px;display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.15);border:1px solid #fff;color:#fff;border-radius:999px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:180ms ease" style-hover="background:rgba(255,255,255,.28);transform:translateY(-2px);color:#fff">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+          Quero entrar no FIT12
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resultados" style="max-width:1180px;margin:0 auto;padding:88px clamp(20px,4vw,48px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(24px,4vw,60px);align-items:end">
+      <h2 style="margin:0;font-size:clamp(34px,4vw,54px);font-weight:800;line-height:.95;letter-spacing:-.035em">Evolução<br />de <span style="position:relative;display:inline-block;z-index:0" style-before="content:'';position:absolute;inset:64% -2px 11px;background:#F4C842;z-index:-1">alunas</span> reais</h2>
+      <p style="margin:0;max-width:420px;font-size:14px;line-height:1.55;color:#34302C">Comparativos de alunas em acompanhamento, nos períodos indicados em cada registro. Resultados individuais: cada corpo responde no seu tempo.</p>
+    </div>
+
+    <div style="margin-top:48px;display:flex;flex-wrap:wrap;gap:clamp(20px,2.6vw,30px);align-items:flex-start">
+      <figure style="margin:0;flex:1 1 560px;min-width:260px">
+        <img src="img/resultado-12s-1.jpg" alt="Comparativo de evolução de aluna da Dany Fontoura após 12 semanas de acompanhamento" style="display:block;width:100%;height:auto" />
+        <figcaption style="margin-top:14px;display:flex;align-items:center;gap:12px">
+          <span style="width:25px;height:2px;background:#9476C4"></span>
+          <span style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">12 semanas de acompanhamento</span>
+        </figcaption>
+      </figure>
+      <div style="flex:1 1 300px;min-width:240px;background:#33266B;color:#fff;padding:clamp(26px,2.8vw,36px);align-self:stretch;display:flex;flex-direction:column;min-height:260px">
+        <div style="font-size:clamp(56px,6vw,86px);font-weight:800;line-height:.86;letter-spacing:-.05em;color:#F4C842">12</div>
+        <div style="margin-top:14px;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.78)">Semanas, um ciclo FIT12</div>
+        <p style="margin:auto 0 0;padding-top:26px;font-size:14px;line-height:1.6;color:rgba(255,255,255,.86)">É esse o intervalo em que a maior parte destes registros foi feita: treino ajustado semana a semana, com acompanhamento do início ao fim do ciclo.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:clamp(20px,2.6vw,30px);display:flex;flex-wrap:wrap;gap:clamp(20px,2.6vw,30px);align-items:flex-start">
+      <figure style="margin:0;flex:1 1 340px;min-width:240px">
+        <img src="img/resultado-12s-2.jpg" alt="Comparativo de evolução de aluna da Dany Fontoura após 12 semanas de acompanhamento" style="display:block;width:100%;height:auto" />
+        <figcaption style="margin-top:14px;display:flex;align-items:center;gap:12px">
+          <span style="width:25px;height:2px;background:#9476C4"></span>
+          <span style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">12 semanas</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0;flex:1 1 300px;min-width:240px">
+        <img src="img/resultado-12s-3.jpg" alt="Comparativo de evolução de aluna da Dany Fontoura após 12 semanas de acompanhamento" style="display:block;width:100%;height:auto" />
+        <figcaption style="margin-top:14px;display:flex;align-items:center;gap:12px">
+          <span style="width:25px;height:2px;background:#9476C4"></span>
+          <span style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">12 semanas</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div style="margin-top:clamp(20px,2.6vw,30px);display:flex;flex-wrap:wrap;gap:clamp(20px,2.6vw,30px);align-items:flex-start">
+      <figure style="margin:0;flex:1 1 420px;min-width:240px">
+        <img src="img/resultado-12s-4.jpg" alt="Comparativo de evolução de aluna da Dany Fontoura após 12 semanas de acompanhamento" style="display:block;width:100%;height:auto" />
+        <figcaption style="margin-top:14px;display:flex;align-items:center;gap:12px">
+          <span style="width:25px;height:2px;background:#9476C4"></span>
+          <span style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">12 semanas</span>
+        </figcaption>
+      </figure>
+      <figure style="margin:0;flex:1 1 300px;min-width:240px">
+        <img src="img/resultado-30d-1.jpg" alt="Comparativo de evolução de aluna da Dany Fontoura após 30 dias de acompanhamento" style="display:block;width:100%;height:auto" />
+        <figcaption style="margin-top:14px;display:flex;align-items:center;gap:12px">
+          <span style="width:25px;height:2px;background:#F4C842"></span>
+          <span style="font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#34302C">30 dias</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="experiencia" style="background:#FFF9EF;border-top:1px solid rgba(7,7,7,.07)">
+    <div style="max-width:1180px;margin:0 auto;padding:88px clamp(20px,4vw,48px);position:relative">
+      <div style="position:absolute;right:clamp(20px,4vw,48px);top:64px;width:140px;height:140px;border:1px solid rgba(7,7,7,.16);border-radius:999px;z-index:0"></div>
+      <div style="position:relative;z-index:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(40px,5vw,76px);align-items:start">
+        <div style="position:relative">
+          <div style="position:absolute;left:-7%;bottom:-40px;width:176px;height:176px;background:#F4C842;border-radius:48% 52% 38% 62% / 54% 46% 54% 46%;z-index:0"></div>
+          <div style="position:relative;z-index:1">
+            <div style="font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#9476C4">Como é treinar com a Dany</div>
+            <p style="margin:22px 0 0;font-size:clamp(28px,3.2vw,42px);font-weight:800;line-height:1.02;letter-spacing:-.035em;color:#070707;text-wrap:pretty">Você chega sabendo o que vai treinar, e sai sabendo o que vem <span style="position:relative;display:inline-block;z-index:0" style-before="content:'';position:absolute;inset:64% -2px 9px;background:#9476C4;z-index:-1">depois</span>.</p>
+            <div style="margin-top:30px;border-top:1px solid rgba(7,7,7,.12);padding-top:16px;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#34302C">Presencial em Porto Belo ou consultoria online</div>
+          </div>
+        </div>
+        <div style="padding-top:clamp(4px,2.4vw,40px)">
+          <div style="font-size:11px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:#34302C">Na prática</div>
+          <div style="margin-top:26px;border-top:1px solid rgba(7,7,7,.12);padding:20px 0;display:flex;gap:16px;align-items:flex-start">
+            <div style="flex:0 0 auto;width:9px;height:9px;border-radius:999px;background:#9476C4;margin-top:7px"></div>
+            <div style="font-size:clamp(17px,1.7vw,21px);font-weight:700;line-height:1.25;letter-spacing:-.02em">Avaliação física para entender o seu ponto de partida</div>
+          </div>
+          <div style="border-top:1px solid rgba(7,7,7,.12);padding:20px 0;display:flex;gap:16px;align-items:flex-start">
+            <div style="flex:0 0 auto;width:9px;height:9px;border-radius:999px;background:#9476C4;margin-top:7px"></div>
+            <div style="font-size:clamp(17px,1.7vw,21px);font-weight:700;line-height:1.25;letter-spacing:-.02em">Treino montado por mim, ajustado conforme você evolui</div>
+          </div>
+          <div style="border-top:1px solid rgba(7,7,7,.12);border-bottom:1px solid rgba(7,7,7,.12);padding:20px 0;display:flex;gap:16px;align-items:flex-start">
+            <div style="flex:0 0 auto;width:9px;height:9px;border-radius:999px;background:#9476C4;margin-top:7px"></div>
+            <div style="font-size:clamp(17px,1.7vw,21px);font-weight:700;line-height:1.25;letter-spacing:-.02em">Contato direto comigo durante o acompanhamento</div>
+          </div>
+          <p style="margin:26px 0 0;font-size:13px;line-height:1.55;color:#34302C;max-width:340px">No online você treina na sua academia com o mesmo plano e a mesma orientação do presencial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" style="background:#FAF4E9;border-top:1px solid rgba(7,7,7,.07);border-bottom:1px solid rgba(7,7,7,.07)">
+    <div style="max-width:1180px;margin:0 auto;padding:80px clamp(20px,4vw,48px)">
+      <h2 style="margin:0;max-width:520px;font-size:clamp(32px,3.6vw,48px);font-weight:800;line-height:.95;letter-spacing:-.035em">Como funciona</h2>
+      <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px">
+        <div>
+          <div style="font-size:42px;font-weight:800;line-height:1;letter-spacing:-.04em;color:#9476C4">01</div>
+          <h3 style="margin:18px 0 0;font-size:20px;font-weight:700;line-height:1.05;letter-spacing:-.02em">Você me chama no WhatsApp</h3>
+          <p style="margin:14px 0 0;font-size:13px;line-height:1.55;color:#34302C">A conversa é direta comigo, sem formulário e sem intermediário.</p>
+        </div>
+        <div>
+          <div style="font-size:42px;font-weight:800;line-height:1;letter-spacing:-.04em;color:#9476C4">02</div>
+          <h3 style="margin:18px 0 0;font-size:20px;font-weight:700;line-height:1.05;letter-spacing:-.02em">Falamos do seu objetivo e do formato</h3>
+          <p style="margin:14px 0 0;font-size:13px;line-height:1.55;color:#34302C">Eu entendo onde você quer chegar e vemos se faz mais sentido treinar presencial ou online.</p>
+        </div>
+        <div>
+          <div style="font-size:42px;font-weight:800;line-height:1;letter-spacing:-.04em;color:#9476C4">03</div>
+          <h3 style="margin:18px 0 0;font-size:20px;font-weight:700;line-height:1.05;letter-spacing:-.02em">Definimos o acompanhamento e você começa</h3>
+          <p style="margin:14px 0 0;font-size:13px;line-height:1.55;color:#34302C">Com o formato definido, eu monto o seu treino e a gente inicia o ciclo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" style="max-width:1180px;margin:0 auto;padding:80px clamp(20px,4vw,48px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:48px">
+      <div>
+        <h2 style="margin:0;font-size:clamp(32px,3.6vw,48px);font-weight:800;line-height:.95;letter-spacing:-.035em">Onde eu atendo</h2>
+        <div style="margin-top:36px;display:flex;flex-direction:column;gap:28px;max-width:400px">
+          <div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9476C4">Endereço</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.5;color:#070707">Av. Gov. Celso Ramos, 1374<br />Perequê, Porto Belo, SC, 88210-000</p>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9476C4">Horários</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.5;color:#070707">Segunda a sexta, das 07:00 às 20:00</p>
+          </div>
+          <div>
+            <div style="font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#9476C4">Formatos</div>
+            <p style="margin:12px 0 0;font-size:15px;line-height:1.5;color:#070707">Presencial em Porto Belo e região, e consultoria online para quem treina em outra cidade.</p>
+          </div>
+        </div>
+      </div>
+      <div style="background:#33266B;color:#fff;padding:clamp(28px,4vw,44px);display:flex;flex-direction:column">
+        <h3 style="margin:0;font-size:clamp(26px,2.6vw,34px);font-weight:800;line-height:1;letter-spacing:-.03em;color:#fff">Bora começar<br />o seu ciclo</h3>
+        <p style="margin:18px 0 0;font-size:14px;line-height:1.6;color:rgba(255,255,255,.82)">Me conta o seu objetivo e eu te explico como funciona o acompanhamento.</p>
+        <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="margin-top:32px;height:52px;padding-inline:32px;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#33266B;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;transition:180ms ease" style-hover="transform:translateY(-2px);background:#F4C842;color:#070707">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+          Falar no WhatsApp
+        </a>
+        <div style="margin-top:auto;padding-top:36px;display:flex;align-items:center;gap:10px">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de Dany Fontoura" style="width:40px;height:40px;border-radius:999px;background:rgba(255,255,255,.15);border:1px solid #fff;display:flex;align-items:center;justify-content:center">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.9.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 100-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"></path></svg>
+          </a>
+          <span style="font-size:11px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)">Acompanhe o dia a dia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid rgba(7,7,7,.07)">
+    <div style="max-width:1180px;margin:0 auto;padding:44px clamp(20px,4vw,48px) 120px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between">
+      <div>
+        <div style="font-family:'Oswald',sans-serif;font-size:16px;font-weight:500;letter-spacing:.3em;text-transform:uppercase">Dany Fontoura</div>
+        <div style="font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#34302C;margin-top:8px">Personal Trainer em Porto Belo, SC</div>
+      </div>
+      <div style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#34302C">CREF 036072 G/SC</div>
+    </div>
+  </footer>
+
+  <sc-if value="{{ showFloating }}" hint-placeholder-val="{{ true }}">
+    <div>
+      <sc-if value="{{ isDesktop }}" hint-placeholder-val="{{ true }}">
+        <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" aria-label="Falar com Dany Fontoura no WhatsApp" style="position:fixed;right:26px;bottom:26px;z-index:70;width:54px;height:54px;border-radius:999px;background:#9476C4;display:flex;align-items:center;justify-content:center;box-shadow:0 15px 35px rgba(25,15,5,.12);transition:180ms ease" style-hover="background:#8667B8;transform:translateY(-2px)">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+        </a>
+      </sc-if>
+      <sc-if value="{{ isMobile }}">
+        <a href="https://wa.me/5547992754013?text=Ol%C3%A1%2C%20Dany.%20Quero%20saber%20mais%20sobre%20o%20M%C3%A9todo%20FIT12." target="_blank" rel="noopener" style="position:fixed;left:0;right:0;bottom:0;z-index:70;height:64px;background:#9476C4;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;box-shadow:0 -10px 30px rgba(25,15,5,.12)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.347-.347.52-.52.174-.173.232-.297.347-.495.116-.198.058-.371-.011-.52-.069-.149-.667-1.611-.913-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path></svg>
+          Quero começar agora
+        </a>
+      </sc-if>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showHeroCard&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Seções&quot;},&quot;showFloatingCta&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Seções&quot;}}">
+class Component extends DCLogic {
+  state = {
+    isMobile: typeof window !== "undefined" && window.innerWidth < 1040,
+    width: typeof window !== "undefined" ? window.innerWidth : 1200,
+    menuOpen: false
+  };
+
+  componentDidMount() {
+    this._onResize = () => {
+      const w = window.innerWidth;
+      const m = w < 1040;
+      this.setState(s => ({ width: w, isMobile: m, menuOpen: m === s.isMobile ? s.menuOpen : false }));
+    };
+    window.addEventListener("resize", this._onResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this._onResize);
+  }
+
+  renderVals() {
+    const isMobile = this.state.isMobile;
+    const w = this.state.width;
+    return {
+      programCols: w >= 900 ? "repeat(3,1fr)" : "1fr",
+      isMobile,
+      isDesktop: !isMobile,
+      menuOpen: this.state.menuOpen,
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      showHeroCard: this.props.showHeroCard ?? true,
+      showFloating: this.props.showFloatingCta ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
